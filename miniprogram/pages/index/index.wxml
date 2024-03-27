@@ -4,6 +4,7 @@
 
 <view class="login-page {{loginStatus?'login-bg':'login-bg1'}}">
   <view class="login-page-imgGroup">
+  
     <!-- <image  wx:for="{{counts}}" wx:key="index" src="{{_.img(item)}}" class="login-page-img"></image> -->
     <!-- <view wx:for="{{counts}}" wx:key="index" style="background-image: url('{{_.img(item)}}');" class="login-page-img {{'img'+item}}"></view> -->
   </view>
