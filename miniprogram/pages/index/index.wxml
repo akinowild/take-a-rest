@@ -1,26 +1,34 @@
-<wxs module="_">
-  module.exports.img = function (no) { return 'https://res.youcon.com.cn/static/yixi/' + no + '.png' }
-</wxs>
-
-<view class="login-page {{loginStatus?'login-bg':'login-bg1'}}">
-  <view class="login-page-imgGroup">
-  
-    <!-- <image  wx:for="{{counts}}" wx:key="index" src="{{_.img(item)}}" class="login-page-img"></image> -->
-    <!-- <view wx:for="{{counts}}" wx:key="index" style="background-image: url('{{_.img(item)}}');" class="login-page-img {{'img'+item}}"></view> -->
-  </view>
-  <view class="statement">
-      <!-- <button open-type="getPhoneNumber" bindgetphonenumber="authorizeBtn" class="login-page-btn" bind:tap="handlePhone"> 手机号快捷登录</button> -->
-      <button class="login-page-btn" bind:tap="handlePhone"> 手机号快捷登录</button>
-      <view class="statement-check">
-      <checkbox-group bindchange="checkboxChange">
-        <label class="weui-cell weui-check__label">
-          <view class="weui-cell__hd">
-            <checkbox value="roger" checked="{{roger}}" />
-          </view>
-        </label>
-      </checkbox-group>
-      我同意<text bind:tap="getAgreement" class="link-a">《憩服务条款》</text>与<text bind:tap="getAgreement" class="link-a">《用户协议》</text><text bind:tap="getAgreement" class="link-a">《隐私政策》</text>
+<view class="home-page">
+  <view class="header">
+    <view class="header-left">
+      Good
+      <view>morning.</view>
     </view>
-
+    <image src="https://res.youcon.com.cn/static/yixi/1.png" class="header-right-img"></image>
+  </view>
+  <view class="like">
+    <view class="like-left">
+      <view class="like-left-icon"></view>
+      <view class="like-left-text">While there is life there is hope.</view>
+    </view>
+    <view class="like-right-icon">"--->"</view>
+  </view>
+  <view class="list">
+    <view class="one">
+      <view>冥想</view>
+      <view></view>
+    </view>
+    <view class="three">
+      <view>睡眠<view>白噪音</view></view>
+      <view></view>
+    </view>
+    <view class="two">
+      <view>心流<view>计时器</view></view>
+      <view></view>
+    </view>
+    <view class="four">
+      <view>声音轨迹</view>
+      <view></view>
+    </view>
   </view>
 </view>

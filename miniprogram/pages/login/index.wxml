@@ -1,0 +1,25 @@
+<wxs module="_">
+  module.exports.img = function (no) { return 'https://res.youcon.com.cn/static/yixi/' + no + '.png' }
+</wxs>
+
+<view class="login-page {{loginStatus?'login-bg1':'login-bg'}}">
+  <view class="login-page-imgGroup">
+    <!-- <image  wx:for="{{counts}}" wx:key="index" src="{{_.img(item)}}" class="login-page-img"></image> -->
+    <!-- <view wx:for="{{counts}}" wx:key="index" style="background-image: url('{{_.img(item)}}');" class="login-page-img {{'img'+item}}"></view> -->
+  </view>
+  <view class="statement">
+      <!-- <button open-type="getPhoneNumber" bindgetphonenumber="authorizeBtn" class="login-page-btn" bind:tap="handlePhone"> 手机号快捷登录</button> -->
+      <button class="login-page-btn" bind:tap="handlePhone" wx:if="{{!loginStatus}}"> 手机号快捷登录</button>
+      <view class="statement-check">
+      <checkbox-group bindchange="checkboxChange">
+        <label class="weui-cell weui-check__label">
+          <view class="weui-cell__hd">
+            <checkbox value="roger" checked="{{roger}}" />
+          </view>
+        </label>
+      </checkbox-group>
+      我同意<text bind:tap="getAgreement" class="link-a">《憩服务条款》</text>与<text bind:tap="getAgreement" class="link-a">《用户协议》</text><text bind:tap="getAgreement" class="link-a">《隐私政策》</text>
+    </view>
+
+  </view>
+</view>

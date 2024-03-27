@@ -1,61 +1,71 @@
-.login-page{
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-size: 100%;
-  &-btn{
-    background-color: #686A00;
-    color: white;
-    border-radius: 18px;
-    padding: 10px 30px;
-  }
-  &-img{
+.home-page {
+  background: linear-gradient(to left bottom, #FFE2D5 , rgba(255, 255, 255, .7) 60%),
+    linear-gradient(to right bottom, rgb(160, 235, 212) , rgba(255, 255, 255, .7) 60%);
+    // linear-gradient(to right top, #FFE2D5, rgba(255, 255, 255, .7) 20%),
+    // linear-gradient(to top, #70aafa, rgba(255, 255, 255, .7) 40%);
     width: 100vw;
     height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 3;
-    background-size: 100% 100%;
-    transition: 3s all;
-    animation: donghuaImg 1s ease .5s 1 forwards;
-    opacity: 0;
+    backdrop-filter: blur(35px);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 170rpx 50rpx 0px;
+
+  &-left {
+    font-size: 60rpx;
+    font-weight: 500;
   }
-}
-.login-bg{
-  background-image: url(https://res.youcon.com.cn/static/yixi/1.png);
-  background-color: #F5EFD9;
-}
-.login-bg1{
-  background-image: url(https://res.youcon.com.cn/static/yixi/login-bg1.png);
-  background-color: #F5EFD9;
-}
-@keyframes donghuaImg{
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
+
+  &-right-img {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
   }
 }
 
-
-
-.statement{
-  font-size: 24rpx;
-  position: fixed;
-  bottom: 15%;
-  left: 50%;
-  width: 100%;
-  transform: translate(-50%,0%);
-  &-check{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #878E34;
-    margin: 20px 0px;
+.like {
+  padding: 50rpx;
+  display: grid;
+  grid-template-columns: 1fr 70rpx;
+  align-items: center;
+}
+.list{
+  padding:  50rpx;
+  column-count: 2;
+  column-gap: 20rpx;
+  .one{
+    background-color: #FFB773;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 15rpx;
+    height: 300rpx;
+    margin: 0rpx 0px 20rpx;
+  }
+  .two{
+    background-color: #74EAF8;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 15rpx;
+    height: 400rpx;
+    margin: 0rpx 0px 20rpx;
+  }
+  .three{
+    background-color: #CF8BF8;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 15rpx;
+    height: 400rpx;
+    margin: 0rpx 0px 20rpx;
+  }
+  .four{
+    background-color: #96E379;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 15rpx;
+    height: 300rpx;
+    margin: 0rpx 0px 20rpx;
   }
 }

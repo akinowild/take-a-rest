@@ -3,5 +3,5 @@
     "navigation-bar": "/components/navigation-bar/navigation-bar",
     "t-button": "tdesign-miniprogram/button/button"
   },
-  "navigationStyle": "custom"
+      "navigationStyle": "custom"
 }
